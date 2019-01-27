@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Server_1 = require("./src/Server");
-exports.ApplicationServer = Server_1.ApplicationServer;
+var ApplicationServer_1 = require("./src/ApplicationServer");
+exports.ApplicationServer = ApplicationServer_1.ApplicationServer;
 //# sourceMappingURL=index.js.map

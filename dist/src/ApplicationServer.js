@@ -13,4 +13,4 @@ class ApplicationServer {
     }
 }
 exports.ApplicationServer = ApplicationServer;
-//# sourceMappingURL=Server.js.map
+//# sourceMappingURL=ApplicationServer.js.map

@@ -1,1 +1,1 @@
-export { Server, ApplicationServer } from './src/Server';
+export { ApplicationServer } from './src/ApplicationServer';
