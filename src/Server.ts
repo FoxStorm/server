@@ -1,11 +1,11 @@
 import * as express from 'express'
 
-interface ApplicationServer {
+export interface Server {
   listen (port: number, callback: () => void): void
   useRouter (router: any): void
 }
 
-export class Server implements ApplicationServer {
+export class ApplicationServer implements Server {
   constructor (readonly server = express()) {}
 
   useRouter (router: any): void {

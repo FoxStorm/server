@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
-class Server {
+class ApplicationServer {
     constructor(server = express()) {
         this.server = server;
     }
@@ -12,5 +12,5 @@ class Server {
         this.server.listen(port, callback);
     }
 }
-exports.Server = Server;
+exports.ApplicationServer = ApplicationServer;
 //# sourceMappingURL=Server.js.map
