@@ -31,8 +31,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "@types/express": "^4.16.1",
-    "@types/express-serve-static-core": "^4.16.1",
+    "express-serve-static-core": "^4.16.1",
     "express": "^4.16.4"
   }
 }
