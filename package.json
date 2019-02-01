@@ -2,7 +2,7 @@
   "name": "foxstorm-server",
   "version": "0.1.0",
   "description": "🚀 Server wrapper that powers up FoxStorm Framework.",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/FoxStorm/server"
@@ -31,6 +31,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
+    "@types/express-serve-static-core": "^4.16.1",
     "express": "^4.16.4"
   }
 }
