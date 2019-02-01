@@ -4,7 +4,7 @@ interface Server {
 }
 export declare class ApplicationServer implements Server {
     private readonly server;
-    constructor(server?: import("express-serve-static-core").Express);
+    constructor(server?: any);
     useRouter(router: any): void;
     listen(port: number, callback: () => void): void;
 }

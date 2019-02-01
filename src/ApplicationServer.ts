@@ -6,7 +6,7 @@ interface Server {
 }
 
 export class ApplicationServer implements Server {
-  constructor (private readonly server = express()) {}
+  constructor (private readonly server: any = express()) {}
 
   useRouter (router: any): void {
     this.server.use(router)
