@@ -1,4 +1,4 @@
-# FoxStorm Server
+# FoxStorm Server Service
 
 <p align="center">
   <b>Component of</b>
