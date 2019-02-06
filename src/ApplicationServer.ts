@@ -1,7 +1,7 @@
 import * as express from 'express'
 
 interface Server {
-  listen (port: number, callback: () => void): void
+  listen (port: number, callback?: () => void): void
   useRouter (router: any): void
   setViewEngine (templateEngine: string): void
 }
@@ -13,7 +13,7 @@ export class ApplicationServer implements Server {
     this.server.use(router)
   }
 
-  listen (port: number, callback: () => void) {
+  listen (port: number, callback?: () => void) {
     this.server.listen(port, callback)
   }
 
