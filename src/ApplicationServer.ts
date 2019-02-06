@@ -3,6 +3,7 @@ import * as express from 'express'
 interface Server {
   listen (port: number, callback: () => void): void
   useRouter (router: any): void
+  setViewEngine (templateEngine: string): void
 }
 
 export class ApplicationServer implements Server {
@@ -14,5 +15,9 @@ export class ApplicationServer implements Server {
 
   listen (port: number, callback: () => void) {
     this.server.listen(port, callback)
+  }
+
+  setViewEngine (templateEngine: string): void {
+    this.server.set('view engine', templateEngine)
   }
 }
