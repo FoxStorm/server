@@ -11,6 +11,9 @@ class ApplicationServer {
     listen(port, callback) {
         this.server.listen(port, callback);
     }
+    setViewEngine(templateEngine) {
+        this.server.set('view engine', templateEngine);
+    }
 }
 exports.ApplicationServer = ApplicationServer;
 //# sourceMappingURL=ApplicationServer.js.map
