@@ -1,19 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
-class ApplicationServer {
+class FoxStormServer {
     constructor(server = express()) {
         this.server = server;
     }
-    useRouter(router) {
-        this.server.use(router);
-    }
     listen(port, callback) {
         this.server.listen(port, callback);
+    }
+    useRouter(router) {
+        this.server.use(router);
     }
     setViewEngine(templateEngine) {
         this.server.set('view engine', templateEngine);
     }
 }
-exports.ApplicationServer = ApplicationServer;
-//# sourceMappingURL=ApplicationServer.js.map
+exports.FoxStormServer = FoxStormServer;
+//# sourceMappingURL=FoxStormServer.js.map

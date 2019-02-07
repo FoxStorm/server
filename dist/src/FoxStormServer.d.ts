@@ -1,13 +1,13 @@
-interface Server {
+interface Serving {
     listen(port: number, callback?: () => void): void;
     useRouter(router: any): void;
     setViewEngine(templateEngine: string): void;
 }
-export declare class ApplicationServer implements Server {
+export declare class FoxStormServer implements Serving {
     private readonly server;
     constructor(server?: any);
-    useRouter(router: any): void;
     listen(port: number, callback?: () => void): void;
+    useRouter(router: any): void;
     setViewEngine(templateEngine: string): void;
 }
 export {};

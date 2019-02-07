@@ -1,20 +1,20 @@
 import * as express from 'express'
 
-interface Server {
+interface Serving {
   listen (port: number, callback?: () => void): void
   useRouter (router: any): void
   setViewEngine (templateEngine: string): void
 }
 
-export class ApplicationServer implements Server {
+export class FoxStormServer implements Serving {
   constructor (private readonly server: any = express()) {}
-
-  useRouter (router: any): void {
-    this.server.use(router)
-  }
 
   listen (port: number, callback?: () => void) {
     this.server.listen(port, callback)
+  }
+
+  useRouter (router: any): void {
+    this.server.use(router)
   }
 
   setViewEngine (templateEngine: string): void {
