@@ -1,6 +1,6 @@
 import * as express from 'express'
 
-interface Serving {
+export interface Serving {
   listen (port: number, callback?: () => void): void
   useRouter (router: any): void
   setViewEngine (templateEngine: string): void

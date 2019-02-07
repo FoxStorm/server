@@ -1,1 +1,1 @@
-export { FoxStormServer } from './src/FoxStormServer';
+export { FoxStormServer, Serving } from './src/FoxStormServer';
